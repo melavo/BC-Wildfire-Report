@@ -149,7 +149,7 @@ Here's a high-level solution and implementation strategy:
   - Commit changes regularly, following best practices.
 
 
-  ## **Conclusion:**
+  ## **Architecture Decision:**
 
 The architectural decisions were strategically made to ensure robustness, scalability, and user experience. Leveraging Laravel, a widely-adopted PHP framework, ensures a seamless blend of performance and built-in functionalities. DataTables, with its dynamic grid views, elevates user interactivity, allowing for paging, searching and sorting capabilities. User can view location the map of BC by hovering over location coordinates. All data from OpenMaps are loaded on the initial load  and subsequent calls are made every time a new filter parameter is submitted. The UI is Themes to the BC Gov Style Guide.  
 
