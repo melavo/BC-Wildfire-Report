@@ -144,11 +144,11 @@ Here's a high-level solution and implementation strategy:
 
 - Version Control:
 
-- Initialize a Git repository.
+- - Initialize a Git repository.
   - Use GitHub for version control.
   - Commit changes regularly, following best practices.
 
 
   ## **Conclusion:**
 
-- With Laravel's robust framework capabilities, DataTables' grid features, Nginx's reliability, MySQL's storage, and Docker's containerization, this solution provides a comprehensive, scalable, and deployable system for B.C.'s residents to monitor wildfires.
+  With Laravel's robust framework capabilities, DataTables' grid features, Nginx's reliability, MySQL's storage, and Docker's containerization, this solution provides a comprehensive, scalable, and deployable system for B.C.'s residents to monitor wildfires.
