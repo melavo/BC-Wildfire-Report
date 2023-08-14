@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-This application is for the residents of B.C. to monitor the status of wildfires. The requirements span from frontend design, API handling to deploying the solution in a portable way. 
+This application is for the residents of B.C. to monitor the status of wildfires. The requirements span from frontend design, API handling to deploying the solution in a portable way.  You can view the application at: https://bcgov.melavo.com/
 
 ## **Instructions for Local Deployment Using Docker:**
 
@@ -57,7 +57,7 @@ make key-generate
 
 ## CI/CD
 
-To publish the app, I was able to add GitHub Actions workflow that builds and deploys that would automatically build, unit test and deploy the app to Vultr Cloud server. 
+To publish the app, I was able to add GitHub Actions workflow that builds and deploys that would automatically build, unit test and deploy the app to Vultr Cloud server when a pull request is approved. 
 
 ## **Unit Testing:**	
 
@@ -151,4 +151,6 @@ Here's a high-level solution and implementation strategy:
 
   ## **Conclusion:**
 
-  With Laravel's robust framework capabilities, DataTables' grid features, Nginx's reliability, MySQL's storage, and Docker's containerization, this solution provides a comprehensive, scalable, and deployable system for B.C.'s residents to monitor wildfires.
+The architectural decisions were strategically made to ensure robustness, scalability, and user experience. Leveraging Laravel, a widely-adopted PHP framework, ensures a seamless blend of performance and built-in functionalities. DataTables, with its dynamic grid views, elevates user interactivity, allowing for paging, searching and sorting capabilities. User can view location the map of BC by hovering over location coordinates. All data from OpenMaps are loaded on the initial load  and subsequent calls are made every time a new filter parameter is submitted. The UI is Themes to the BC Gov Style Guide.  
+
+Nginx was chosen for its exceptional performance in handling multiple simultaneous connections and its flexibility in configuration. Docker's containerization promises consistent application behavior across environments, simplifying deployment and potential scalability. Lastly, MySQL, a trusted relational database system, aligns perfectly with Laravel's Eloquent ORM, offering reliability and efficient data handling. MySQL is used to store User Data retrieved from GitHub OAuth. Visitor Log data such is User-Agent, ips, API Urls are also recorded in MYSQL for easy querying.  Collectively, these choices encapsulate a holistic approach, balancing advanced technology with practicality and future readiness.
