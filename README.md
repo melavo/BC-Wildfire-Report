@@ -55,15 +55,15 @@ make key-generate
 
 
 
-### CI/CD
+## CI/CD
 
 To publish the app, I was able to add GitHub Actions workflow that builds and deploys that would automatically build, unit test and deploy the app to Vultr Cloud server. 
 
-### **Unit Testing:**	
+## **Unit Testing:**	
 
 Script for the unit test are located in the folder /tests/. To run the test the following command is called: php ./vendor/bin/phpunit.
 
-### **Querying API Request Log:**	
+## **Querying API Request Log:**	
 
 API Request are logged into the MySQL table visitor_logs. 
 
@@ -77,14 +77,14 @@ Using Laravel as the back-end framework, DataTables for grid views in the front-
 
 Here's a high-level solution and implementation strategy:
 
-### **Solution Outline:**
+## **Solution Outline:**
 
 - Front-End: A web interface using Laravel Blade and DataTables to display and filter wildfire data.
 - Back-End: Laravel backend to handle business logic, API communications, and data storage/retrieval.
 - Database: MySQL database to store user login data and visitor log.
 - Deployment: Docker container comprising of an Nginx web server, PHP for Laravel, and MYSQL 
 
-### **Features:**
+## **Features:**
 
 - Clean and intuitive UI interface with paging and sorting capabilities
 - Themes to the BC Gov Style Guide
@@ -93,7 +93,7 @@ Here's a high-level solution and implementation strategy:
 - Coordinate location viewable via embedded map to allowing easy visualize and locate area affected
 - Logging capabilities to record API request into database for easy query of log  
 
-### **Implementation Steps:**
+## **Implementation Steps:**
 
 - Setup Laravel Project:
 
@@ -139,17 +139,16 @@ Here's a high-level solution and implementation strategy:
 
 - Documentation:
 
-- - Write detailed steps on setting up the application locally using Docker.
+- Write detailed steps on setting up the application locally using Docker.
   - Include any prerequisites, installation steps, and how to use the application.
 
 - Version Control:
 
-- - Initialize a Git repository.
+- Initialize a Git repository.
   - Use GitHub for version control.
   - Commit changes regularly, following best practices.
 
-- 
 
-  ### **Conclusion:**
+  ## **Conclusion:**
 
 - With Laravel's robust framework capabilities, DataTables' grid features, Nginx's reliability, MySQL's storage, and Docker's containerization, this solution provides a comprehensive, scalable, and deployable system for B.C.'s residents to monitor wildfires.
